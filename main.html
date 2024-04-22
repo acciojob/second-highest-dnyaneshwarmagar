@@ -11,7 +11,7 @@
 		function secondHighest(arr) {
 			//Write your code here;
 			if(arr.length === 0 || arr.length === 1){
-				return "-Infinity"
+				return -Infinity
 			}
 
 			let num = Math.max(...arr);
@@ -19,7 +19,7 @@
 			let eleArr = arr.filter((el) => el < num );
 
 			if(eleArr.length === 0){
-				return "-Infinity"
+				return -Infinity
 			}
 
 			eleArr = eleArr.sort((a,b) => a-b)
@@ -35,7 +35,7 @@
 			}
 			alert(secondHighest(arr));
 		}
-		Main();
+		// Main();
 	</script>
 
     <script type="text/javascript" src="./script.js">
